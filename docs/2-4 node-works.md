@@ -56,3 +56,9 @@ node takes care fof _automatically_ offloading these task into the thread pool:
 - don't perform complex calculations (e.g. loops inside loops)
 - be careful with JSON in large objects
 - don't use too complex regular expressions (e.g. nested quantifiers)
+
+## Event-Driven (Observer pattern)
+
+- Event emitter -> (emits events)
+- Event listener -> (calls)
+- Attached callback function
