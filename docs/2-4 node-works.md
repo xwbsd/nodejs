@@ -62,3 +62,23 @@ node takes care fof _automatically_ offloading these task into the thread pool:
 - Event emitter -> (emits events)
 - Event listener -> (calls)
 - Attached callback function
+
+## Streams
+
+used to process (read and write) data piece by piece (chunks), without completing the whole read or write operation, and therefore without keeping all the data in memory.
+
+- prefect for handling large volumes of data, for example videos
+- more efficient data processing in terms of memory (no need to keep all data in memory) and time (we don't have to wait until all the data is available)
+
+- readable streams: http requests, fs read streams
+- writable streams: http responses, fs write streams
+- duplex streams: net web socket
+- transform streams: zlib gzip creation
+
+## Require()
+
+- resolving & loading ->
+- wrapping ->
+- execution ->
+- returning exports ->
+- caching
