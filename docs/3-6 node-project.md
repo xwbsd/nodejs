@@ -19,3 +19,9 @@ a piece if software that can be used by another piece if software, in order to a
 | /updateTours | PUT /tours/7    | Update |
 |              | PATCH /tours/7  |        |
 | /deleteTours | DELETE /tours/7 | Delete |
+
+## Middleware
+
+> everything is middleware (even routers)
+
+middleware stack order as defined in the code
