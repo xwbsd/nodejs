@@ -1,10 +1,10 @@
-const express = require("express")
+const express = require('express');
 
-const tourController = require("./../controllers/tourController")
+const tourController = require('../controllers/tourController');
 
-const router = express.Router()
+const router = express.Router();
 
-router.param("id", tourController.checkId)
+router.param('id', tourController.checkId);
 
 // Create a checkBody middleware
 // Check if body contains the name and price property
@@ -12,14 +12,14 @@ router.param("id", tourController.checkId)
 // Add it to the post handler stack
 
 router
-  .route("/")
+  .route('/')
   .get(tourController.getAllTour)
-  .post(tourController.checkBody, tourController.createTour)
+  .post(tourController.checkBody, tourController.createTour);
 
 router
-  .route("/:id")
+  .route('/:id')
   .get(tourController.getTour)
   .patch(tourController.updateTour)
-  .delete(tourController.deleteTour)
+  .delete(tourController.deleteTour);
 
-module.exports = router
+module.exports = router;
